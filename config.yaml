@@ -1,8 +1,0 @@
-common:
-    platform: 'PC' # 平台
-    base_url: 'https://riven.market/list' # url
-    separator: '/' # 分隔符
-    interval: '10' # 查询间隔
-    process_num: 10 # 进程数
-    thread_num: 10 # 线程数
-    riven_list: '' # 搜寻的紫卡，为空则搜寻所有紫卡
