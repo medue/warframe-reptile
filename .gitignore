@@ -3,3 +3,4 @@ __pycache__/*
 *.pyc
 config.yaml
 riven_list.py
+arms.py
