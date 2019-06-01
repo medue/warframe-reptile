@@ -7,7 +7,6 @@
 import sys
 import os
 from urllib import request
-from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -18,10 +17,9 @@ class GetHttp:
             headers = self._get_headers()
         self._response = ''
         try:
-            print(url)
             self._response = request.urlopen(request.Request(url=url, headers=headers))
         except Exception as e:
-            print(e)
+            exit(e)
         self._c = charset
 
     @staticmethod
@@ -34,4 +32,4 @@ class GetHttp:
         try:
             return self._response.read().decode(self._c)
         except Exception as e:
-            print(e)
+            exit(e)
