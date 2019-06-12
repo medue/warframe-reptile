@@ -43,10 +43,11 @@ for arms_name in arms_list:
     # 计算分页总页数
     total_page = ceil(total_riven_num / int(get_value(get_conf(), 'limit', 1)))
     # 第一次处理&写入result
-    result = riven.get_riven_list_data(riven_html, result, arms_list[arms_name]['label'])
+    result = riven.get_riven_list_data(riven_html, result, arms_list[arms_name])
     # 按页发起紫卡列表请求
     for page in range(total_page):
         riven_list_request_url_all = get_riven_list_url(arms_name, page+2)
         riven_html_all = get_http.GetHttp(url=riven_list_request_url).text
-        result = riven.get_riven_list_data(riven_html_all, result, arms_list[arms_name]['label'])
+        result = riven.get_riven_list_data(riven_html_all, result, arms_list[arms_name])
 print(result)
+exit()

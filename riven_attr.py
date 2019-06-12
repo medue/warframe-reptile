@@ -3,6 +3,7 @@
 riven_attr = {
     'Damage': {'label': '伤害', 'full_name': 'Damage', 'negative': True},
     'Multishot': {'label': '多重射击', 'full_name': 'Multishot', 'negative': True},
+    'Multi': {'label': '多重射击', 'full_name': 'Multishot', 'negative': True},
     'Speed': {'label': '攻速', 'full_name': 'Fire Rate / Attack Speed', 'negative': True},
     'Corpus': {'label': '对C系伤害', 'full_name': 'Damage to Corpus', 'negative': True},
     'Grineer': {'label': '对G系伤害', 'full_name': 'Damage to Grineer', 'negative': True},
